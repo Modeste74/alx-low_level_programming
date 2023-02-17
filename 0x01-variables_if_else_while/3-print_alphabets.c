@@ -10,10 +10,10 @@ int main(void)
 	char c;
 	char d;
 
+	for (c = 97; c <= 122; c++)
+		putchar(c);
 	for (d = 65; d <= 90; d++)
-		for (c = 97; c <= 122; c++)
-			putchar(c);
-	putchar(d);
+		putchar(d);
 	putchar('\n');
 	return (0);
 }
