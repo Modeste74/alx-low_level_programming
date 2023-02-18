@@ -13,7 +13,7 @@ int main(void)
 	for (n = 48; n <= 56; n++)
 	{
 
-	for (m = n + 49; m <= 57; m++)
+	for (m = n + 1; m <= 57; m++)
 	{
 		if (n != m)
 		{
@@ -24,7 +24,5 @@ int main(void)
 		}
 	}
 	}
-	
-	
 	return (0);
 }
