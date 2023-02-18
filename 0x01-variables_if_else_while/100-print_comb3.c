@@ -11,20 +11,21 @@ int main(void)
 	int m;
 
 	for (n = 48; n <= 56; n++)
+	{
 
 	for (m = 49; m <= 57; m++)
 	{
-		if (n == m)
-		{
-			putchar(0x00);
-		}
-		else if (n != m)
+		if (n != m)
 		{
 			putchar(n);
 			putchar(m);
+			if (n == 49 && m == 50)
 			putchar(',');
 			putchar(' ');
 		}
 	}
+	}
+	
+	
 	return (0);
 }
