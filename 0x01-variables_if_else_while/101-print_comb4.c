@@ -12,18 +12,29 @@ int main(void)
 	int p;
 
 	for (n = 48; n <= 55; n++)
-		for (m = 49; m <= 56; m++)
-			for (p = 50; p <= 57; p++)
+	{
+		for (m = n + 1; m <= 56; m++)
+		{
+			for (p = m + 1; p <= 57; p++)
 			{
 				if (n != m && m != p)
 				{
 					putchar(n);
 					putchar(m);
 					putchar(p);
+				}
+
+					if (n == 55 && m == 56 && p == 57)
+						continue;
+					{
 					putchar(',');
 					putchar(' ');
-				}
+					}
 			}
+		}
+	}
 
+			
+	putchar('\n');
 	return (0);
 }
