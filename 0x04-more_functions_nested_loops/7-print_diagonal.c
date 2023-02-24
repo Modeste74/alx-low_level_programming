@@ -3,7 +3,7 @@
 /**
  * print_diagonal - prototype head for the program
  * @n: to be read
- * REturn: void
+ * Return: diagonal
  */
 void print_diagonal(int n)
 {
