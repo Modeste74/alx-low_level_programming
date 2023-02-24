@@ -3,15 +3,17 @@
 #include <stdio.h>
 
 /**
+ * main - prototype head
  * fizzBuzz test
+ * Return: 0
  */
 int main(void)
 {
 	int n;
 
-	for (n = 1; n <=100; n++);
+	for (n = 1; n <= 100; n++)
 	{
-		if ((n % 3 == 0) && (n % 5 == 0))
+		if (n % 15 == 0)
 		{
 			printf("FizzBuzz");
 		}
@@ -27,10 +29,11 @@ int main(void)
 		{
 			printf("%d", n);
 		}
-		if (n != 100)
+		if (n < 100)
 		{
 			printf(" ");
 		}
 	}
-	putchar('\n');
+	printf("\n");
+	return (0);
 }
