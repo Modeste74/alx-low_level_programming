@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- * reverse_array - head for the function below
- *
- * @a: reserving of the array
- * @n: length of the element in array
+ * reverse_array - prototype head for this function
+ * @a: array of int to be reversed
+ * @n: the quantity of elements to reserved in the array
  * Return: void
  */
 void reverse_array(int *a, int n)
 {
-	int j, tmp;
+	int m, p;
 
-	for (j = n - 1; j >= n / 2; j--)
+	for (m = 0; m < n--; m++)
 	{
-		tmp = a[n - 1 - j];
-		a[n - 1 - j] = a[j];
-		a[j] = tmp;
+		p = a[m];
+		a[m] = a[n];
+		a[n] = p;
 	}
 }
