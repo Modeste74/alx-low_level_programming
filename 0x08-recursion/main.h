@@ -7,3 +7,7 @@ int _sqrt_recursion(int n);
 int is_prime_number(int n);
 void _putchar();
 int _solve(int guess, int n);
+int is_palindrome(char *s);
+int wildcmp(char *s1, char *s2);
+int check_for_pali(char *s, int n, int l);
+int length(char *s);
