@@ -3,17 +3,18 @@
 
 /**
  * main - entry point
- * @agrv: string of arguments
- * @agrc: no of strings
+ * @argv: string of arguments
+ * @argc: no of strings
  * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int n;
+	int n = 0;
 
-	for (n = 0; n < argc; n++)
+	while (n < argc)
 	{
 		printf("%s\n", argv[n]);
+		n++;
 	}
 	return (0);
 }
