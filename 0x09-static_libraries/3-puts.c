@@ -1,17 +1,10 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
-/**
- * _puts - prototype head for the function
- *
- * @s: to be printed out
- * Return: void
- */
 void _puts(char *s)
 {
-	for (; *s != '\0';)
-	{
-		_putchar(*s);
-		s++;
-	}
-	_putchar('\n');
+    puts(s);
 }

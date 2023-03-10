@@ -1,9 +1,10 @@
 #include "main.h"
-/**
- * _atoi - entry point
- * @s: string
- * Return: an int
- */
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
 int _atoi(char *s)
 {
+    return atoi(s);
 }

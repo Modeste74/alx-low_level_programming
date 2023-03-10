@@ -1,17 +1,9 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
 #include <string.h>
 
-/**
- * _strlen - used as prototype head
- *
- * @s: length to be determined
- * Return: count
- */
 int _strlen(char *s)
 {
-	int count = 0;
-
-	while (*s++)
-		count++;
-	return (count);
+    return strlen(s);
 }

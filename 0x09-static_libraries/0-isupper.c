@@ -1,16 +1,10 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
-/**
- * _isupper - prototype head for this program.
- *
- * @c: to read and processed
- * Return: 1 if upper and 0 otherwise
- */
 int _isupper(int c)
 {
-	if (c >= 65 && c <= 90)
-	{
-		return (1);
-	}
-	return (0);
+    return (c >= 65 && c <= 90);
 }
