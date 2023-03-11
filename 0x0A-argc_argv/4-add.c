@@ -10,14 +10,17 @@
  */
 int main(int argc, char *argv[])
 {
-	int n, sum = 0;
+	int n, m, sum = 0;
 
 	for (n = 1; n < argc; n++)
 	{
-		if (*argv[n] < 48 || *argv[n] > 57)
+		for (m = 0; argv[n][m]; m++)
 		{
-			printf("Error\n");
-			return (1);
+			if (argv[n][m] < 48 || argv[n][m] > 57)
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 		sum += atoi(argv[n]);
 	}
