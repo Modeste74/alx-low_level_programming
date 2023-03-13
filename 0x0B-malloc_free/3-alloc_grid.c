@@ -38,10 +38,14 @@ int **alloc_grid(int height, int width)
 			free(matrix);
 			return (NULL);
 		}
+	}
+	for (p = 0; p < height; p++)
+	{
 		for (q = 0; q < width; q++)
 		{
 			matrix[p][q] = 0;
 		}
 	}
+
 	return (matrix);
 }
