@@ -2,46 +2,46 @@
 #include <stdlib.h>
 
 /**
- * **alloc_grid - For building 2-dimensional array
- * @height: rows of the 2-D array
- * @width: columns of the 2-D array
- * Return: matrix
+ * alloc_grid - Entry point
+ * @width: to be columns of the 2-d array
+ * @height: to  be the no of rows
+ * Return: matrix array
  */
-int **alloc_grid(int height, int width)
+int **alloc_grid(int width, int height)
 {
-	int p, q;
 	int **matrix;
+	int n, m;
 
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
 
-	matrix = malloc(sizeof(int *) * height);
-
+	matrix = malloc(height * sizeof(int *));
 	if (matrix == NULL)
 	{
+		free(matrix);
 		return (NULL);
 	}
-	for (p = 0; p < height; p++)
+	for (n = 0; n < height; n++)
 	{
-
-		matrix[p] = malloc(sizeof(int) * width);
-
-		if (matrix[p] == NULL)
+		matrix[n] = malloc(width * sizeof(int));
+		if (matrix[n] == NULL)
 		{
-			for (q = 0; q < p; q++)
+			for (n--; n >= 0; n--)
 			{
-				free(matrix[q]);
+				free(matrix[n]);
 				free(matrix);
 				return (NULL);
 			}
 		}
-		for (q = 0; q < width; q++)
+	}
+	for (n = 0; n < height; n++)
+	{
+		for (m = 0; m < width; m++)
 		{
-			matrix[p][q] = 0;
+			matrix[n][m] = 0;
 		}
 	}
-
 	return (matrix);
 }
