@@ -14,6 +14,8 @@ int op_add(int a, int b)
 }
 /**
  * op_sub - substracts two parameters
+ * @a: num1
+ * @b: num2
  * Return: substruct
  */
 int op_sub(int a, int b)
@@ -22,6 +24,8 @@ int op_sub(int a, int b)
 }
 /**
  * op_mul - multiply two parameters
+ * @a: num1
+ * @b: num2
  * Return: multiplication
  */
 int op_mul(int a, int b)
@@ -30,6 +34,8 @@ int op_mul(int a, int b)
 }
 /**
  * op_div - divides two parameters
+ * @a: num1
+ * @b: num2
  * Return: division
  */
 int op_div(int a, int b)
@@ -43,6 +49,8 @@ int op_div(int a, int b)
 }
 /**
  * op_mod - find the modulus of two parameters
+ * @a: num1
+ * @b: num2
  * Return: modulus
  */
 int op_mod(int a, int b)
