@@ -1,11 +1,16 @@
 #ifndef CALC_H_
 #define CALC_H_
 
+/**
+ * struct op - structure for function pointer
+ * @op: operator
+ * @f: function pointer
+ */
 typedef struct op
 {
 	char *op;
 	int (*f)(int a, int b);
-}op_t;
+} op_t;
 
 int op_add(int a, int b);
 int op_sub(int a, int b);
