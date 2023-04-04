@@ -20,21 +20,14 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 	if (index == 0)
 	{
-		*head = (*head)->next;
-		free(erase);
-		erase = NULL;
-		return (1);
-	}
-	else if (index == 1)
-	{
-		*head = new_head;
+		*head = erase->next;
 		free(erase);
 		erase = NULL;
 		return (1);
 	}
 	else
 	{
-		while (index >= 1)
+		while (index > 0)
 		{
 			new_head = erase;
 			erase = erase->next;
