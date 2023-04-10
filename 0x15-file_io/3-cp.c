@@ -34,7 +34,7 @@ void close_fd(int fds)
  * @argc: number of arguments passed
  * @argv: arguments passed
  *
- * Exit: exit success
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
