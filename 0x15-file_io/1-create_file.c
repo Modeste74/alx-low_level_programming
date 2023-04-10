@@ -20,10 +20,10 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	size = strlen(text_content);
 	if (text_content != NULL)
 	{
-		written_byte = write(fd, text_content, size + 1);
+		size = strlen(text_content);
+		written_byte = write(fd, text_content, size);
 		if (written_byte == -1)
 		{
 			close(fd);
