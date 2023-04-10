@@ -60,5 +60,5 @@ int main(int argc, char *argv)
 		error_msg("Error: Can't close fd %d\n", fd_new);
 		exit(100);
 	}
-	exit(EXIT_SUCCESS);
+	return (0);
 }
