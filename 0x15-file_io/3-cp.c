@@ -58,8 +58,7 @@ int main(int argc, char *argv[])
 		error_msg("Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	read_byte = read(fd_prev, buffer, BUFF_SIZE);
-	while (read_byte > 0)
+	while ((read_byte = read(fd_prev, buffer, BUFF_SIZE)) > 0)
 	{
 		written_byte = write(fd_new, buffer, read_byte);
 		if (written_byte != read_byte)
@@ -75,5 +74,5 @@ int main(int argc, char *argv[])
 	}
 	close_fd(fd_prev);
 	close_fd(fd_new);
-	return (0);
+	exit(EXIT_SUCCESS);
 }
