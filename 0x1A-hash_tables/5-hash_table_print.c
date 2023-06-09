@@ -24,7 +24,7 @@ void hash_table_print(const hash_table_t *ht)
 			{
 				printf(", ");
 			}
-			printf("'%s' : '%s'", transverser->key, transverser->value);
+			printf("'%s': '%s'", transverser->key, transverser->value);
 			count++;
 			transverser = transverser->next;
 		}
